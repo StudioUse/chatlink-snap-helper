@@ -21,7 +21,7 @@ const HeroSection = ({
   secondaryCta 
 }: HeroSectionProps) => {
   return (
-    <div className="hero-gradient min-h-screen flex items-center justify-start pt-24 pb-32 px-4 md:px-8 lg:px-16">
+    <div className="min-h-screen flex items-center justify-start pt-24 pb-32 px-4 md:px-8 lg:px-16">
       <div className="container mx-auto">
         <div className="flex flex-col space-y-12">
           {/* B2B and B2C buttons at the top */}
