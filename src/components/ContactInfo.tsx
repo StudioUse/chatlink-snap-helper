@@ -1,3 +1,4 @@
+
 import ContactForm from '@/components/ContactForm';
 
 const ContactInfo = () => {
@@ -36,12 +37,6 @@ const ContactInfo = () => {
             
             <div className="mt-8">
               <h3 className="text-2xl font-bold text-white mb-4">Contact Details</h3>
-              <p className="flex items-center text-gray-300 mb-2">
-                <span className="mr-2">📱</span>
-                <a href="tel:+917737992646" className="hover:text-jmd-orange transition-colors">
-                  +917737992646
-                </a>
-              </p>
               <p className="flex items-center text-gray-300">
                 <span className="mr-2">✉️</span>
                 <a href="mailto:info@jmdpanel.com" className="hover:text-jmd-orange transition-colors">

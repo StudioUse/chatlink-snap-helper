@@ -60,12 +60,6 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-6">Contact Details</h3>
             <ul className="space-y-4">
               <li className="flex items-center text-gray-400">
-                <span className="mr-2">📱</span>
-                <a href="tel:+917737992646" className="hover:text-jmd-orange transition-colors">
-                  +917737992646
-                </a>
-              </li>
-              <li className="flex items-center text-gray-400">
                 <span className="mr-2">✉️</span>
                 <a href="mailto:info@jmdpanel.com" className="hover:text-jmd-orange transition-colors">
                   info@jmdpanel.com

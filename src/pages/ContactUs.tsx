@@ -23,12 +23,6 @@ const ContactUs = () => {
                 <h3 className="text-xl font-bold text-white mb-4">Contact Information</h3>
                 <div className="space-y-4">
                   <p className="flex items-start text-gray-300">
-                    <span className="mr-4 text-jmd-orange">📱</span>
-                    <a href="tel:+917737992646" className="hover:text-jmd-orange transition-colors">
-                      +917737992646
-                    </a>
-                  </p>
-                  <p className="flex items-start text-gray-300">
                     <span className="mr-4 text-jmd-orange">✉️</span>
                     <a href="mailto:info@jmdpanel.com" className="hover:text-jmd-orange transition-colors">
                       info@jmdpanel.com
