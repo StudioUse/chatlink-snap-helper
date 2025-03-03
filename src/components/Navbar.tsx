@@ -74,12 +74,12 @@ const Navbar = () => {
               </Link>
             </nav>
             
-            <a 
-              href="tel:+917737992646" 
+            <Link 
+              to="/contact-us" 
               className="hidden md:flex items-center px-5 py-2 rounded-md bg-jmd-orange text-white font-bold transition-all duration-300 hover:bg-opacity-90"
             >
-              +917737992646
-            </a>
+              Contact Us
+            </Link>
             
             {/* Mobile Menu Button */}
             <button 
@@ -138,12 +138,12 @@ const Navbar = () => {
                 >
                   Contact Us
                 </Link>
-                <a 
-                  href="tel:+917737992646" 
+                <Link 
+                  to="/contact-us" 
                   className="py-2 px-4 bg-jmd-orange text-white rounded-md text-center"
                 >
-                  +917737992646
-                </a>
+                  Contact Us
+                </Link>
               </nav>
             </div>
           </div>
