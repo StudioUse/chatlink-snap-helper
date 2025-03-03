@@ -25,7 +25,7 @@ const HeroSection = ({
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto text-left">
           <div className="flex flex-col items-start space-y-8 animate-fade-in">
-            <h1 className="text-6xl md:text-8xl font-extrabold leading-tight">
+            <h1 className="text-6xl md:text-8xl font-bold leading-tight font-display tracking-wider">
               <div className="text-jmd-orange">BOOK CHALAIN</div>
               <div className="text-white">PAISA KAMAIN</div>
             </h1>

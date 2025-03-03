@@ -126,6 +126,7 @@ export default {
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
 				heading: ['Montserrat', 'sans-serif'],
+				display: ['Orbitron', 'sans-serif'],
 			}
 		}
 	},
