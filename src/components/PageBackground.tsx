@@ -15,11 +15,11 @@ const PageBackground = ({ children }: PageBackgroundProps) => {
       {isHomePage && (
         <div className="absolute inset-0 z-0">
           <img 
-            src="/lovable-uploads/7a5847ed-a851-4a34-bb0c-687817d207ab.png" 
+            src="/lovable-uploads/117ef496-70d3-4c1c-871c-4348c31e24c1.png" 
             alt="Coding background" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 top-0 bg-black/50 backdrop-blur-[1px]"></div>
+          <div className="absolute inset-0 top-0 bg-black/60 backdrop-blur-[1px]"></div>
         </div>
       )}
       
