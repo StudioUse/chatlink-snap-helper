@@ -7,15 +7,15 @@ const BookiePanelInfo = () => {
           <span className="text-jmd-orange">WHAT IS</span> BOOKIE PANEL AND HOW IT'S WORK
         </h2>
         
-        <div className="max-w-4xl mx-auto mt-8">
-          <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+        <div className="max-w-5xl mx-auto mt-10">
+          <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
             <iframe 
               src="https://www.youtube.com/embed/eKqY-oP1d_Y" 
               title="Bookie Panel Information"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowFullScreen
-              className="w-full h-full"
+              className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
             ></iframe>
           </div>
         </div>
