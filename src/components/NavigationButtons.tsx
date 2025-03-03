@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const NavigationButtons = () => {
   return (
-    <div className="py-12 bg-gradient-to-r from-jmd-darkGray to-jmd-black">
+    <div className="py-8 bg-transparent">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-center items-center gap-6">
           <motion.div
@@ -14,7 +14,7 @@ const NavigationButtons = () => {
           >
             <Link 
               to="/b2b-panel" 
-              className="group w-full md:w-auto flex items-center justify-center px-10 py-5 bg-gradient-to-r from-jmd-orange to-amber-500 rounded-lg text-white font-bold text-lg transition-all duration-300 hover:shadow-lg hover:shadow-jmd-orange/30 relative overflow-hidden"
+              className="group w-full md:w-auto flex items-center justify-center px-10 py-5 bg-jmd-orange rounded-md text-white font-extrabold text-lg transition-all duration-300 hover:shadow-lg hover:shadow-jmd-orange/30 relative overflow-hidden"
             >
               <span className="relative z-10">B2B SITES</span>
               <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>
@@ -28,7 +28,7 @@ const NavigationButtons = () => {
           >
             <Link 
               to="/b2c-sites" 
-              className="group w-full md:w-auto flex items-center justify-center px-10 py-5 bg-gradient-to-r from-jmd-orange to-amber-500 rounded-lg text-white font-bold text-lg transition-all duration-300 hover:shadow-lg hover:shadow-jmd-orange/30 relative overflow-hidden"
+              className="group w-full md:w-auto flex items-center justify-center px-10 py-5 bg-jmd-orange rounded-md text-white font-extrabold text-lg transition-all duration-300 hover:shadow-lg hover:shadow-jmd-orange/30 relative overflow-hidden"
             >
               <span className="relative z-10">B2C SITES</span>
               <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>

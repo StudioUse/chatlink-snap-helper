@@ -12,6 +12,7 @@ import CasinoPartners from '@/components/CasinoPartners';
 import BookiePanelInfo from '@/components/BookiePanelInfo';
 import GameCategories from '@/components/GameCategories';
 import ContactInfo from '@/components/ContactInfo';
+import PageBackground from '@/components/PageBackground';
 
 const Index = () => {
   // Feature cards data
@@ -35,26 +36,28 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      <HeroSection 
-        title="BOOK CHALAIN PAISA KAMAIN"
-        cta={{ text: "CONTACT US", link: "/contact-us" }}
-        secondaryCta={{ text: "OUR SERVICES", link: "/our-services" }}
-      />
-      
-      <NavigationButtons />
-      <WhitelabelCTA />
-      <PartnerLogos />
-      <AdminSharing />
-      <CasinoPartners />
-      <BookiePanelInfo />
-      <FeatureCards features={features} />
-      <GameCategories />
-      <InstagramFeed />
-      <ContactInfo />
-      
-      <WhatsAppButton phoneNumber="917737992646" />
-    </div>
+    <PageBackground>
+      <div className="min-h-screen">
+        <HeroSection 
+          title="BOOK CHALAIN PAISA KAMAIN"
+          cta={{ text: "CONTACT US", link: "/contact-us" }}
+          secondaryCta={{ text: "OUR SERVICES", link: "/our-services" }}
+        />
+        
+        <NavigationButtons />
+        <WhitelabelCTA />
+        <PartnerLogos />
+        <AdminSharing />
+        <CasinoPartners />
+        <BookiePanelInfo />
+        <FeatureCards features={features} />
+        <GameCategories />
+        <InstagramFeed />
+        <ContactInfo />
+        
+        <WhatsAppButton phoneNumber="917737992646" />
+      </div>
+    </PageBackground>
   );
 };
 
