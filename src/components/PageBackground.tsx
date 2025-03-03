@@ -14,11 +14,11 @@ const PageBackground = ({ children }: PageBackgroundProps) => {
     <div className="min-h-screen relative">
       {isHomePage && (
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+          <div className="absolute inset-0 bg-black/70 backdrop-blur-sm z-10"></div>
           <img 
             src="/lovable-uploads/photo-1461749280684-dccba630e2f6.jpg" 
             alt="Coding background" 
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover"
           />
         </div>
       )}
