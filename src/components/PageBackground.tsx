@@ -15,8 +15,8 @@ const PageBackground = ({ children }: PageBackgroundProps) => {
       {isHomePage && (
         <div className="absolute inset-0 z-0">
           <img 
-            src="/lovable-uploads/117ef496-70d3-4c1c-871c-4348c31e24c1.png" 
-            alt="Coding background" 
+            src="/lovable-uploads/31fafb6b-af87-4767-b27d-f7a3da0302aa.png" 
+            alt="Background" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 top-0 bg-black/60 backdrop-blur-[1px]"></div>

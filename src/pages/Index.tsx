@@ -5,8 +5,6 @@ import FeatureCards from '@/components/FeatureCards';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import InstagramFeed from '@/components/InstagramFeed';
 import ContactForm from '@/components/ContactForm';
-import NavigationButtons from '@/components/NavigationButtons';
-import WhitelabelCTA from '@/components/WhitelabelCTA';
 import AdminSharing from '@/components/AdminSharing';
 import CasinoPartners from '@/components/CasinoPartners';
 import BookiePanelInfo from '@/components/BookiePanelInfo';
@@ -44,8 +42,6 @@ const Index = () => {
           secondaryCta={{ text: "OUR SERVICES", link: "/our-services" }}
         />
         
-        <NavigationButtons />
-        <WhitelabelCTA />
         <PartnerLogos />
         <AdminSharing />
         <CasinoPartners />
