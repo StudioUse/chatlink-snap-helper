@@ -7,14 +7,16 @@ const BookiePanelInfo = () => {
           <span className="text-jmd-orange">WHAT IS</span> BOOKIE PANEL AND HOW IT'S WORK
         </h2>
         
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gray-800 rounded-lg p-8">
-            <p className="text-gray-300 leading-relaxed">
-              A bookie panel is a sophisticated platform designed for bookmakers to manage their sports betting operations efficiently. It provides a comprehensive suite of tools for creating and managing betting markets, handling player accounts, processing transactions, and analyzing betting patterns.
-            </p>
-            <p className="text-gray-300 leading-relaxed mt-4">
-              Our panels come with user-friendly interfaces that make it easy to set odds, manage risk, and track profits in real-time. They're built with advanced security features to protect both the bookmaker and their clients.
-            </p>
+        <div className="max-w-4xl mx-auto mt-8">
+          <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+            <iframe 
+              src="https://www.youtube.com/embed/eKqY-oP1d_Y" 
+              title="Bookie Panel Information"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen
+              className="w-full h-full"
+            ></iframe>
           </div>
         </div>
       </div>
