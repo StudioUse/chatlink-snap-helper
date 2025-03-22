@@ -3,12 +3,9 @@ import HeroSection from '@/components/HeroSection';
 import PartnerLogos from '@/components/PartnerLogos';
 import FeatureCards from '@/components/FeatureCards';
 import WhatsAppButton from '@/components/WhatsAppButton';
-import InstagramFeed from '@/components/InstagramFeed';
 import ContactForm from '@/components/ContactForm';
 import AdminSharing from '@/components/AdminSharing';
 import CasinoPartners from '@/components/CasinoPartners';
-import BookiePanelInfo from '@/components/BookiePanelInfo';
-import GameCategories from '@/components/GameCategories';
 import ContactInfo from '@/components/ContactInfo';
 import PageBackground from '@/components/PageBackground';
 
@@ -21,11 +18,11 @@ const Index = () => {
     },
     {
       title: "Proven Track Record",
-      description: "With years of experience and a portfolio of satisfied clients, JMDpanel.com is a partner you can rely on for success."
+      description: "With years of experience and a portfolio of satisfied clients, MASTERpanel is a partner you can rely on for success."
     },
     {
       title: "Trusted Industry Leader",
-      description: "JMDpanel.com stands as a trusted name in B2B and B2C solutions, delivering excellence and reliability to businesses of all sizes."
+      description: "MASTERpanel stands as a trusted name in B2B solutions, delivering excellence and reliability to businesses of all sizes."
     },
     {
       title: "Affordable Pricing",
@@ -45,13 +42,10 @@ const Index = () => {
         <PartnerLogos />
         <AdminSharing />
         <CasinoPartners />
-        <BookiePanelInfo />
         <FeatureCards features={features} />
-        <GameCategories />
-        <InstagramFeed />
         <ContactInfo />
         
-        <WhatsAppButton phoneNumber="917737992646" />
+        <WhatsAppButton phoneNumber="443333034340" />
       </div>
     </PageBackground>
   );

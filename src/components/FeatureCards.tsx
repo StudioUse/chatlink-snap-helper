@@ -9,7 +9,7 @@ const FeatureCards = ({ features }: { features: Feature[] }) => {
     <section className="py-16 gradient-bg relative">
       <div className="container mx-auto px-4 relative z-10">
         <h2 className="section-title text-white mb-16">
-          <span className="text-jmd-orange">Why Choose</span> JMDPANEL ?
+          <span className="text-jmd-orange">Why Choose</span> MASTERPANEL ?
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

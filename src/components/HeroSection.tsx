@@ -24,20 +24,13 @@ const HeroSection = ({
     <div className="min-h-screen flex items-center justify-start pt-24 pb-32 px-4 md:px-8 lg:px-16">
       <div className="container mx-auto">
         <div className="flex flex-col space-y-12">
-          {/* B2B and B2C buttons at the top */}
+          {/* B2B button at the top */}
           <div className="flex flex-row gap-6">
             <Link 
               to="/b2b-sites" 
               className="px-8 py-3 bg-jmd-orange rounded-md text-white font-bold text-lg uppercase transition-all duration-300 hover:bg-opacity-90"
             >
               B2B SITES
-            </Link>
-            
-            <Link 
-              to="/b2c-sites" 
-              className="px-8 py-3 bg-jmd-orange rounded-md text-white font-bold text-lg uppercase transition-all duration-300 hover:bg-opacity-90"
-            >
-              B2C SITES
             </Link>
           </div>
           

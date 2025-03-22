@@ -18,11 +18,25 @@ const ContactForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to your server or API
-    console.log('Form submitted:', formData);
+    
+    // Format the message for WhatsApp
+    const message = `
+New Contact Form Submission:
+Name: ${formData.fullName}
+Phone: ${formData.phoneNumber}
+Panel Type: ${formData.selectedPanel}
+Coin Requirement: ${formData.coinRequirement}
+Site Type: ${formData.siteType}
+    `.trim();
+    
+    // Encode the message for WhatsApp URL
+    const encodedMessage = encodeURIComponent(message);
+    
+    // Open WhatsApp with the pre-filled message
+    window.open(`https://wa.me/443333034340?text=${encodedMessage}`, '_blank');
     
     // Show success toast
-    toast.success('Request submitted successfully! We will contact you soon.');
+    toast.success('Request submitted successfully! Redirecting to WhatsApp...');
     
     // Reset form
     setFormData({
@@ -37,7 +51,7 @@ const ContactForm = () => {
   return (
     <div className="bg-jmd-darkGray rounded-lg border border-gray-800 p-8 shadow-xl animate-fade-in">
       <h3 className="text-2xl font-bold text-white mb-6 text-center">
-        Start Your B2B/B2C Business Now
+        Start Your B2B Business Now
       </h3>
       
       <form onSubmit={handleSubmit} className="space-y-6">
@@ -86,7 +100,6 @@ const ContactForm = () => {
           >
             <option value="White Label">White Label</option>
             <option value="B2B Panel">B2B Panel</option>
-            <option value="B2C Site">B2C Site</option>
           </select>
         </div>
         

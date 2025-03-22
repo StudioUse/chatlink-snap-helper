@@ -9,9 +9,7 @@ import Footer from "./components/Footer";
 import PageBackground from "./components/PageBackground";
 import Index from "./pages/Index";
 import B2BPanel from "./pages/B2BPanel";
-import B2CSites from "./pages/B2CSites";
 import Whitelabels from "./pages/Whitelabels";
-import AdminVideos from "./pages/AdminVideos";
 import OurServices from "./pages/OurServices";
 import ContactUs from "./pages/ContactUs";
 import NotFound from "./pages/NotFound";
@@ -30,9 +28,7 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/b2b-panel" element={<B2BPanel />} />
-              <Route path="/b2c-sites" element={<B2CSites />} />
               <Route path="/whitelabels" element={<Whitelabels />} />
-              <Route path="/admin-videos" element={<AdminVideos />} />
               <Route path="/our-services" element={<OurServices />} />
               <Route path="/contact-us" element={<ContactUs />} />
               <Route path="*" element={<NotFound />} />
