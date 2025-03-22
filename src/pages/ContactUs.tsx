@@ -58,7 +58,7 @@ const ContactUs = () => {
         </div>
       </div>
       
-      <WhatsAppButton phoneNumber="917737992646" />
+      <WhatsAppButton phoneNumber="443333034340" />
     </div>
   );
 };
