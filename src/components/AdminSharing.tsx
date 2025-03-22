@@ -1,5 +1,6 @@
 
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const AdminSharing = () => {
   // Define the sites data for each type
@@ -122,9 +123,9 @@ const AdminSharing = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
           {getCurrentSites().map((site, index) => (
             <div key={index} className="flex flex-col rounded-lg overflow-hidden">
-              {activeSiteType === "TOP SITES" && site.logo ? (
+              {activeSiteType === "TOP SITES" ? (
                 <div className="bg-gray-800 p-4 h-32 flex items-center justify-center">
-                  <img src={site.logo} alt={site.name} className="max-h-full object-contain" />
+                  <img src={(site as any).logo} alt={site.name} className="max-h-full object-contain" />
                 </div>
               ) : (
                 <div className="bg-teal-800 p-4 flex items-center justify-center">
@@ -145,7 +146,5 @@ const AdminSharing = () => {
     </div>
   );
 };
-
-import { useState } from 'react';
 
 export default AdminSharing;
