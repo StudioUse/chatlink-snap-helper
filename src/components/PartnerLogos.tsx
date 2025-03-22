@@ -1,12 +1,12 @@
 
 const PartnerLogos = () => {
-  // Sample partner logos data
+  // Partner logos data from top sites
   const partners = [
-    { name: "Partner 1", color: "bg-emerald-700" },
-    { name: "Partner 2", color: "bg-amber-800" },
-    { name: "Partner 3", color: "bg-orange-700" },
-    { name: "Partner 4", color: "bg-teal-700" },
-    { name: "Partner 5", color: "bg-yellow-600" }
+    { name: "WORLD777.NOW", logo: "/lovable-uploads/9840ec32-5b80-43af-8716-3bcb5172d98b.png" },
+    { name: "WOLF777.COM", logo: "/lovable-uploads/8b7a034d-0c40-4bf2-9f73-04073017c594.png" },
+    { name: "TAJ777.NOW", logo: "/lovable-uploads/1fff3e55-790d-444f-89ad-0265198c3302.png" },
+    { name: "D247.COM", logo: "/lovable-uploads/39ba1a73-5f7f-4b5e-9d35-72977203f63b.png" },
+    { name: "DIAMONDEXCH99.COM", logo: "/lovable-uploads/d0ac1172-9bfd-49ad-8364-e5898a8bc41c.png" }
   ];
 
   return (
@@ -20,11 +20,11 @@ const PartnerLogos = () => {
           {partners.map((partner, index) => (
             <div
               key={index}
-              className={`${partner.color} h-32 rounded-lg shadow-lg flex items-center justify-center 
-              partner-card animate-fade-in`}
+              className="bg-gray-800 h-32 rounded-lg shadow-lg flex items-center justify-center 
+              partner-card animate-fade-in p-4"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <p className="text-xl font-bold text-white">{partner.name}</p>
+              <img src={partner.logo} alt={partner.name} className="max-h-full max-w-full object-contain" />
             </div>
           ))}
         </div>

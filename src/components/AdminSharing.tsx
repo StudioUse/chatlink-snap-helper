@@ -2,9 +2,15 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
+interface Site {
+  name: string;
+  sharing: string;
+  logo?: string;
+}
+
 const AdminSharing = () => {
   // Define the sites data for each type
-  const topSites = [
+  const topSites: Site[] = [
     { name: "WORLD777.NOW", sharing: "25%", logo: "/lovable-uploads/9840ec32-5b80-43af-8716-3bcb5172d98b.png" },
     { name: "WOLF777.COM", sharing: "27%", logo: "/lovable-uploads/8b7a034d-0c40-4bf2-9f73-04073017c594.png" },
     { name: "TAJ777.NOW", sharing: "22%", logo: "/lovable-uploads/1fff3e55-790d-444f-89ad-0265198c3302.png" },
@@ -12,18 +18,18 @@ const AdminSharing = () => {
     { name: "DIAMONDEXCH99.COM", sharing: "", logo: "/lovable-uploads/d0ac1172-9bfd-49ad-8364-e5898a8bc41c.png" }
   ];
 
-  const diamondSites = [
+  const diamondSites: Site[] = [
     { name: "ALLPANELEXCH.COM", sharing: "27%" },
     { name: "DIAMONDEXCH99.COM", sharing: "27%" },
     { name: "PS999.CLUB", sharing: "17%" }
   ];
 
-  const d247Sites = [
+  const d247Sites: Site[] = [
     { name: "SETWIN247.COM", sharing: "20%" },
     { name: "PS247.CLUB", sharing: "17%" }
   ];
 
-  const worldSites = [
+  const worldSites: Site[] = [
     { name: "SETWIN777.CLUB", sharing: "18%" },
     { name: "WOLF777.COM", sharing: "27%" },
     { name: "WORLD777.NOW", sharing: "25%" },
@@ -32,7 +38,7 @@ const AdminSharing = () => {
     { name: "ICE777.WORLD", sharing: "15%" }
   ];
 
-  const radheSites = [
+  const radheSites: Site[] = [
     { name: "SETWIN777.CLUB", sharing: "18%" },
     { name: "WOLF777.COM", sharing: "27%" },
     { name: "WORLD777.NOW", sharing: "25%" },
@@ -41,13 +47,13 @@ const AdminSharing = () => {
     { name: "ICE777.WORLD", sharing: "15%" }
   ];
 
-  const iceSites = [
+  const iceSites: Site[] = [
     { name: "SETWIN999.COM", sharing: "22%" },
     { name: "SETWIN999.CO", sharing: "16%" },
     { name: "ICEEXCH.COM", sharing: "18%" }
   ];
 
-  const skySites = [
+  const skySites: Site[] = [
     { name: "ICEBOOK365.COM", sharing: "25%" }
   ];
 
@@ -125,7 +131,7 @@ const AdminSharing = () => {
             <div key={index} className="flex flex-col rounded-lg overflow-hidden">
               {activeSiteType === "TOP SITES" ? (
                 <div className="bg-gray-800 p-4 h-32 flex items-center justify-center">
-                  <img src={(site as any).logo} alt={site.name} className="max-h-full object-contain" />
+                  <img src={site.logo} alt={site.name} className="max-h-full object-contain" />
                 </div>
               ) : (
                 <div className="bg-teal-800 p-4 flex items-center justify-center">
