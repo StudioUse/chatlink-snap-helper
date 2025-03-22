@@ -55,6 +55,12 @@ const Footer = () => {
                   masterpanel247@gmail.com
                 </a>
               </li>
+              <li className="flex items-center text-gray-400">
+                <span className="mr-2">📱</span>
+                <a href="https://wa.me/443333034340" className="hover:text-jmd-orange transition-colors" target="_blank" rel="noopener noreferrer">
+                  +44 3333034340
+                </a>
+              </li>
             </ul>
           </div>
         </div>

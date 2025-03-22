@@ -5,11 +5,66 @@ import { toast } from 'sonner';
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     fullName: '',
+    countryCode: '+91', // Default country code
     phoneNumber: '',
     selectedPanel: 'White Label',
     coinRequirement: '10K - 1L',
     siteType: 'Top Sites'
   });
+
+  // Asian country codes
+  const countryCodes = [
+    { code: '+91', name: 'India' },
+    { code: '+93', name: 'Afghanistan' },
+    { code: '+374', name: 'Armenia' },
+    { code: '+994', name: 'Azerbaijan' },
+    { code: '+973', name: 'Bahrain' },
+    { code: '+880', name: 'Bangladesh' },
+    { code: '+975', name: 'Bhutan' },
+    { code: '+673', name: 'Brunei' },
+    { code: '+855', name: 'Cambodia' },
+    { code: '+86', name: 'China' },
+    { code: '+357', name: 'Cyprus' },
+    { code: '+995', name: 'Georgia' },
+    { code: '+852', name: 'Hong Kong' },
+    { code: '+62', name: 'Indonesia' },
+    { code: '+98', name: 'Iran' },
+    { code: '+964', name: 'Iraq' },
+    { code: '+972', name: 'Israel' },
+    { code: '+81', name: 'Japan' },
+    { code: '+962', name: 'Jordan' },
+    { code: '+7', name: 'Kazakhstan' },
+    { code: '+965', name: 'Kuwait' },
+    { code: '+996', name: 'Kyrgyzstan' },
+    { code: '+856', name: 'Laos' },
+    { code: '+961', name: 'Lebanon' },
+    { code: '+853', name: 'Macau' },
+    { code: '+60', name: 'Malaysia' },
+    { code: '+960', name: 'Maldives' },
+    { code: '+976', name: 'Mongolia' },
+    { code: '+95', name: 'Myanmar' },
+    { code: '+977', name: 'Nepal' },
+    { code: '+850', name: 'North Korea' },
+    { code: '+968', name: 'Oman' },
+    { code: '+92', name: 'Pakistan' },
+    { code: '+970', name: 'Palestine' },
+    { code: '+63', name: 'Philippines' },
+    { code: '+974', name: 'Qatar' },
+    { code: '+966', name: 'Saudi Arabia' },
+    { code: '+65', name: 'Singapore' },
+    { code: '+82', name: 'South Korea' },
+    { code: '+94', name: 'Sri Lanka' },
+    { code: '+963', name: 'Syria' },
+    { code: '+886', name: 'Taiwan' },
+    { code: '+992', name: 'Tajikistan' },
+    { code: '+66', name: 'Thailand' },
+    { code: '+90', name: 'Turkey' },
+    { code: '+993', name: 'Turkmenistan' },
+    { code: '+971', name: 'United Arab Emirates' },
+    { code: '+998', name: 'Uzbekistan' },
+    { code: '+84', name: 'Vietnam' },
+    { code: '+967', name: 'Yemen' }
+  ];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -23,7 +78,7 @@ const ContactForm = () => {
     const message = `
 New Contact Form Submission:
 Name: ${formData.fullName}
-Phone: ${formData.phoneNumber}
+Phone: ${formData.countryCode}${formData.phoneNumber}
 Panel Type: ${formData.selectedPanel}
 Coin Requirement: ${formData.coinRequirement}
 Site Type: ${formData.siteType}
@@ -41,6 +96,7 @@ Site Type: ${formData.siteType}
     // Reset form
     setFormData({
       fullName: '',
+      countryCode: '+91',
       phoneNumber: '',
       selectedPanel: 'White Label',
       coinRequirement: '10K - 1L',
@@ -75,16 +131,31 @@ Site Type: ${formData.siteType}
           <label htmlFor="phoneNumber" className="block text-white mb-2">
             Phone Number
           </label>
-          <input
-            type="tel"
-            id="phoneNumber"
-            name="phoneNumber"
-            value={formData.phoneNumber}
-            onChange={handleChange}
-            placeholder="+91XXXXXXXXXX"
-            className="w-full px-4 py-3 rounded-md bg-black text-white border border-gray-700 focus:border-jmd-orange focus:outline-none focus:ring-1 focus:ring-jmd-orange"
-            required
-          />
+          <div className="flex">
+            <select
+              id="countryCode"
+              name="countryCode"
+              value={formData.countryCode}
+              onChange={handleChange}
+              className="w-1/3 px-2 py-3 rounded-l-md bg-black text-white border border-gray-700 focus:border-jmd-orange focus:outline-none focus:ring-1 focus:ring-jmd-orange"
+            >
+              {countryCodes.map((country) => (
+                <option key={country.code} value={country.code}>
+                  {country.code} ({country.name})
+                </option>
+              ))}
+            </select>
+            <input
+              type="tel"
+              id="phoneNumber"
+              name="phoneNumber"
+              value={formData.phoneNumber}
+              onChange={handleChange}
+              placeholder="Phone Number"
+              className="w-2/3 px-4 py-3 rounded-r-md bg-black text-white border border-gray-700 border-l-0 focus:border-jmd-orange focus:outline-none focus:ring-1 focus:ring-jmd-orange"
+              required
+            />
+          </div>
         </div>
         
         <div>
@@ -136,8 +207,10 @@ Site Type: ${formData.siteType}
               <option value="Top Sites">Top Sites</option>
               <option value="Diamond Type">Diamond Type</option>
               <option value="D247 Type">D247 Type</option>
-              <option value="Radhe Type">Radhe Type</option>
               <option value="World Type">World Type</option>
+              <option value="Radhe Type">Radhe Type</option>
+              <option value="Ice Type">Ice Type</option>
+              <option value="Sky Type">Sky Type</option>
             </select>
           </div>
         </div>
