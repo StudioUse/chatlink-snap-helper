@@ -12,14 +12,9 @@ const OurServices = () => {
       image: "/lovable-uploads/6c6a011f-e5f3-49c7-8000-a5ac709ae4fb.png"
     },
     {
-      title: "B2C Website Development",
-      description: "Custom-designed business-to-consumer websites with seamless user experience.",
-      image: "/lovable-uploads/e2e8d540-bf4d-419f-a990-7194cd85b987.png"
-    },
-    {
       title: "Whitelabel Products",
       description: "Fully customizable whitelabel solutions that you can brand as your own.",
-      image: "/lovable-uploads/17b64b20-b3c2-41c8-a6e2-32607079949c.png"
+      image: "/lovable-uploads/c1a3fe97-50ca-4721-86aa-0ac550c2bd50.png"
     },
     {
       title: "Technical Support",
@@ -47,7 +42,7 @@ const OurServices = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div 
                 key={index} 
@@ -78,6 +73,23 @@ const OurServices = () => {
               </div>
             ))}
           </div>
+          
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="card-highlight overflow-hidden">
+              <img 
+                src="/lovable-uploads/427649f5-2488-4941-a120-b046a16e80da.png" 
+                alt="B2C Whitelabel" 
+                className="w-full h-auto rounded-md mb-6"
+              />
+            </div>
+            <div className="card-highlight overflow-hidden">
+              <img 
+                src="/lovable-uploads/c1a3fe97-50ca-4721-86aa-0ac550c2bd50.png" 
+                alt="Master Panel" 
+                className="w-full h-auto rounded-md mb-6"
+              />
+            </div>
+          </div>
         </div>
       </div>
       
@@ -98,7 +110,7 @@ const OurServices = () => {
         </div>
       </div>
       
-      <WhatsAppButton phoneNumber="917737992646" />
+      <WhatsAppButton phoneNumber="443333034340" />
     </div>
   );
 };

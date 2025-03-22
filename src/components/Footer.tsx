@@ -18,6 +18,21 @@ const Footer = () => {
             <p className="text-gray-400 mb-6">
               Your one-stop solution for all your B2B business needs in the gaming industry.
             </p>
+            
+            {/* Highlighted sections */}
+            <div className="mt-8 bg-gray-900 p-4 rounded-lg border-l-4 border-jmd-orange mb-6">
+              <p className="text-white font-semibold mb-1">WE ARE ALSO DEALING AND PROVIDING IN CUTTING IDS</p>
+              <p className="text-white font-semibold mb-1">MONDAY TO MONDAY SETTLING</p>
+              <p className="text-white font-semibold mb-1">AND ALSO PROVIDE CLIENT ID WITH BEST WITHDRAW SERVICE</p>
+              <p className="text-jmd-orange font-bold">+443333034340</p>
+            </div>
+            
+            <div className="bg-gray-900 p-4 rounded-lg border-l-4 border-jmd-orange">
+              <p className="text-white font-semibold mb-1">WE ARE ALSO DEALING IN UK NUMBERS FOR YOUR BETTING BUSINESS</p>
+              <p className="text-white font-semibold mb-1">LIKE VIP AND EXTRA ORDINARY NUMBER FOR YOUR SITE</p>
+              <p className="text-white font-semibold mb-1">CONTACT FOR MORE INFORMATION</p>
+              <p className="text-jmd-orange font-bold">+443333034340</p>
+            </div>
           </div>
           
           <div>

@@ -9,7 +9,8 @@ const ContactForm = () => {
     phoneNumber: '',
     selectedPanel: 'White Label',
     coinRequirement: '10K - 1L',
-    siteType: 'Top Sites'
+    siteType: 'Top Sites',
+    idType: 'Single ID'
   });
 
   // Asian country codes
@@ -82,6 +83,7 @@ Phone: ${formData.countryCode}${formData.phoneNumber}
 Panel Type: ${formData.selectedPanel}
 Coin Requirement: ${formData.coinRequirement}
 Site Type: ${formData.siteType}
+ID Type: ${formData.idType}
     `.trim();
     
     // Encode the message for WhatsApp URL
@@ -100,7 +102,8 @@ Site Type: ${formData.siteType}
       phoneNumber: '',
       selectedPanel: 'White Label',
       coinRequirement: '10K - 1L',
-      siteType: 'Top Sites'
+      siteType: 'Top Sites',
+      idType: 'Single ID'
     });
   };
 
@@ -190,6 +193,7 @@ Site Type: ${formData.siteType}
               <option value="1L - 5L">1L - 5L</option>
               <option value="5L - 10L">5L - 10L</option>
               <option value="10L+">10L+</option>
+              <option value="1Cr+">1Cr+</option>
             </select>
           </div>
           
@@ -213,6 +217,22 @@ Site Type: ${formData.siteType}
               <option value="Sky Type">Sky Type</option>
             </select>
           </div>
+        </div>
+        
+        <div>
+          <label htmlFor="idType" className="block text-white mb-2">
+            Choose ID
+          </label>
+          <select
+            id="idType"
+            name="idType"
+            value={formData.idType}
+            onChange={handleChange}
+            className="w-full px-4 py-3 rounded-md bg-black text-white border border-gray-700 focus:border-jmd-orange focus:outline-none focus:ring-1 focus:ring-jmd-orange"
+          >
+            <option value="Single ID">Single ID</option>
+            <option value="Cutting ID">Cutting ID</option>
+          </select>
         </div>
         
         <button

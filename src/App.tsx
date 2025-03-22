@@ -28,6 +28,7 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/b2b-panel" element={<B2BPanel />} />
+              <Route path="/b2b-sites" element={<B2BPanel />} />
               <Route path="/whitelabels" element={<Whitelabels />} />
               <Route path="/our-services" element={<OurServices />} />
               <Route path="/contact-us" element={<ContactUs />} />

@@ -13,7 +13,7 @@ const NavigationButtons = () => {
             className="w-full md:w-auto"
           >
             <Link 
-              to="/b2b-sites" 
+              to="/b2b-panel" 
               className="group w-full md:w-auto flex items-center justify-center px-10 py-3 bg-jmd-orange rounded-md text-white font-extrabold text-lg uppercase transition-all duration-300 hover:shadow-lg hover:shadow-jmd-orange/30 relative overflow-hidden"
             >
               <span className="relative z-10">B2B SITES</span>
