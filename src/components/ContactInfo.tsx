@@ -1,12 +1,17 @@
 
 import ContactForm from '@/components/ContactForm';
+import { motion } from 'framer-motion';
 
 const ContactInfo = () => {
   return (
     <div className="py-16 bg-gradient-bg">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Your One-Stop Solution
               <br />
@@ -32,9 +37,15 @@ const ContactInfo = () => {
                 </a>
               </p>
             </div>
-          </div>
+          </motion.div>
           
-          <ContactForm />
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <ContactForm />
+          </motion.div>
         </div>
       </div>
     </div>

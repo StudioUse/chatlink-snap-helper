@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, MessageCircle } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,9 +36,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-3">
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/87445e5c-98cf-4edf-acad-1cd5efc2a7c3.png" 
+              src="/lovable-uploads/15039621-9358-4486-bb60-08e9d6a96148.png" 
               alt="MASTER Panel Logo" 
-              className="h-10"
+              className="h-12"
             />
           </Link>
           

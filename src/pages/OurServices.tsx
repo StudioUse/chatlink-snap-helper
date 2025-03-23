@@ -2,6 +2,7 @@
 import HeroSection from '@/components/HeroSection';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ContactForm from '@/components/ContactForm';
+import { motion } from 'framer-motion';
 
 const OurServices = () => {
   // Services data
@@ -9,7 +10,7 @@ const OurServices = () => {
     {
       title: "B2B Panel Solutions",
       description: "Comprehensive business-to-business panel solutions for gaming and betting operators.",
-      image: "/lovable-uploads/6c6a011f-e5f3-49c7-8000-a5ac709ae4fb.png"
+      image: "/lovable-uploads/8b7a034d-0c40-4bf2-9f73-04073017c594.png"
     },
     {
       title: "Whitelabel Products",
@@ -19,12 +20,17 @@ const OurServices = () => {
     {
       title: "Technical Support",
       description: "Round-the-clock technical support to ensure your business runs smoothly.",
-      image: "/lovable-uploads/3f9a3dda-417d-4715-8a76-c746e25136d7.png"
+      image: "/lovable-uploads/9840ec32-5b80-43af-8716-3bcb5172d98b.png"
     },
   ];
 
   return (
-    <div className="min-h-screen">
+    <motion.div 
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
+      className="min-h-screen"
+    >
       <HeroSection 
         title="Our Services"
         subtitle="Comprehensive Business Solutions"
@@ -76,18 +82,24 @@ const OurServices = () => {
           
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="card-highlight overflow-hidden">
-              <img 
-                src="/lovable-uploads/427649f5-2488-4941-a120-b046a16e80da.png" 
-                alt="B2C Whitelabel" 
-                className="w-full h-auto rounded-md mb-6"
-              />
+              <div className="overflow-hidden rounded-md mb-6" style={{ height: "260px" }}>
+                <img 
+                  src="/lovable-uploads/427649f5-2488-4941-a120-b046a16e80da.png" 
+                  alt="B2C Whitelabel" 
+                  className="w-full h-full object-cover object-center scale-110"
+                  style={{ objectPosition: "center 35%" }}
+                />
+              </div>
             </div>
             <div className="card-highlight overflow-hidden">
-              <img 
-                src="/lovable-uploads/c1a3fe97-50ca-4721-86aa-0ac550c2bd50.png" 
-                alt="Master Panel" 
-                className="w-full h-auto rounded-md mb-6"
-              />
+              <div className="overflow-hidden rounded-md mb-6" style={{ height: "260px" }}>
+                <img 
+                  src="/lovable-uploads/c1a3fe97-50ca-4721-86aa-0ac550c2bd50.png" 
+                  alt="Master Panel" 
+                  className="w-full h-full object-cover object-center scale-110"
+                  style={{ objectPosition: "center 35%" }}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -111,7 +123,7 @@ const OurServices = () => {
       </div>
       
       <WhatsAppButton phoneNumber="443333034340" />
-    </div>
+    </motion.div>
   );
 };
 

@@ -10,10 +10,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <Link to="/" className="flex items-center mb-6">
-              <span className="text-white font-heading font-bold text-2xl">
-                <span className="text-white">MASTER</span>
-                <span className="text-jmd-orange">PANEL</span>
-              </span>
+              <img 
+                src="/lovable-uploads/15039621-9358-4486-bb60-08e9d6a96148.png" 
+                alt="MASTER Panel Logo" 
+                className="h-10"
+              />
             </Link>
             <p className="text-gray-400 mb-6">
               Your one-stop solution for all your B2B business needs in the gaming industry.
