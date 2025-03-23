@@ -14,7 +14,7 @@ const NavigationButtons = () => {
           >
             <Link 
               to="/b2b-panel" 
-              className="group w-full md:w-auto flex items-center justify-center px-10 py-3 bg-jmd-orange rounded-md text-white font-extrabold text-lg uppercase transition-all duration-300 hover:shadow-lg hover:shadow-jmd-orange/30 relative overflow-hidden"
+              className="group w-full md:w-auto flex items-center justify-center px-10 py-3 bg-jmd-orange rounded-md text-white font-bold text-lg uppercase transition-all duration-300 hover:shadow-lg hover:shadow-jmd-orange/30 relative overflow-hidden"
             >
               <span className="relative z-10">B2B SITES</span>
               <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>

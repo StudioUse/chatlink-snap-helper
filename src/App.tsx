@@ -38,10 +38,10 @@ const AnimatedRoutes = () => {
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
+    <BrowserRouter>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
         <PageBackground>
           <Navbar />
           <main className="pt-16"> {/* Added top padding to account for fixed navbar */}
@@ -49,8 +49,8 @@ const App = () => (
           </main>
           <Footer />
         </PageBackground>
-      </BrowserRouter>
-    </TooltipProvider>
+      </TooltipProvider>
+    </BrowserRouter>
   </QueryClientProvider>
 );
 

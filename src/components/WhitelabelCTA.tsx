@@ -15,7 +15,7 @@ const WhitelabelCTA = () => {
             >
               <Link 
                 to="/whitelabels" 
-                className="group inline-block px-12 py-4 bg-jmd-orange rounded-full text-white font-extrabold text-lg uppercase transition-all duration-300 hover:shadow-lg hover:shadow-jmd-orange/30 relative overflow-hidden"
+                className="group inline-block px-12 py-4 bg-jmd-orange rounded-full text-white font-bold text-lg uppercase transition-all duration-300 hover:shadow-lg hover:shadow-jmd-orange/30 relative overflow-hidden"
               >
                 <span className="relative z-10">AAJ HI APNA WHITELABLE BANWAIN</span>
                 <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>

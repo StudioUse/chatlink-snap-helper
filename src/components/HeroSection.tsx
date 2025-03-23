@@ -27,7 +27,7 @@ const HeroSection = ({
           {/* B2B button at the top */}
           <div className="flex flex-row gap-6">
             <Link 
-              to="/b2b-sites" 
+              to="/b2b-panel" 
               className="px-8 py-3 bg-jmd-orange rounded-md text-white font-bold text-lg uppercase transition-all duration-300 hover:bg-opacity-90"
             >
               B2B SITES
